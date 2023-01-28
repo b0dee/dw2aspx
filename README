@@ -1,0 +1,38 @@
+# DokuWiki to ASPX (DW2ASPX)
+
+Use at your own risk
+
+This is a script I made when having to migrate a wiki to SharePoint, it works - for the most part - good enough for my liking.
+
+### What does it do 
+
+Some regex replacement and other neatening factors to make a closer recreation of an aspx file.
+
+Pandoc does most of the actual processing here thankfully. 
+
+### Setup
+NEVER USE THIS ON A LIVE WIKI!
+
+Copy the entire wiki to a folder named 'wiki'
+
+If you haven't strayed from the default file structure of DokuWiki, you should have the following
+```
+- script.sh
+- wiki
+  - data
+    - pages
+      start.html or similar and so on...
+```
+
+We don't really care for the other folders, these are just directly copied to wherever you need as the regex replacement is done following the DokuWiki folder structure. This may be problematic if you used the custom URL functionality.
+
+### Usage
+
+1. Run script
+```
+./script.sh <SiteName>
+```
+2. Pray
+
+
+
